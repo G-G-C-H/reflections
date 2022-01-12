@@ -12,6 +12,7 @@ body,html{
     margin: 0;
     padding: 0;
     border: 0;
+    overflow: hidden;
 }
 
 body {
@@ -33,6 +34,108 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 1%;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: bookmania;
+  font-size: 0.8em;
+  border: 0.1px solid;
+  border-radius: 40px;
+  padding: 10px 40px 5px 40px;
+}
+
+a:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📀</text></svg>")
+      16 0,
+    auto;
+    color: #ffbeff;
+}
+
+a:visited {
+  color: white;
+  text-transform: uppercase;
+  font-family: bookmania;
+}
+
+h2 {
+  font-family: mudclub, sans-serif;
+  color: black;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #ff5c00;
+  letter-spacing: .2rem;
+  margin: 0;
+  font-size: 7em;
+  text-align: left;
+}
+
+p {
+  font-family: bookmania, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+  color: #9fffc8;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #ff5c00;
+  letter-spacing: .01rem;
+  line-height: 0.5em;
+  text-align: left;
+}
+
+.center {
+  height: 900px;
+  position: relative;
+}
+
+.center h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+.desktop_visible {
+  display: block;
+}
+
+.mobile_visible {
+  display: none;
+}
+
+#workshop-titles-desktop {
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+padding: 0px 0px 450px 0px;
+}
+
+.about {
+  font-family: bookmania, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8em;
+  color: #9fffc8;
+  line-height: 1.7em;
+  padding: 50px 500px 50px 500px;
+}
+
+@media screen and (max-width: 414px) {
+body,html{
+    background-color: black;
+    font-size: 1.5em;
+}
+
+.desktop_visible {
+  display: none;
+}
+
+.mobile_visible {
+  display: block;
 }
 
 a:link {
@@ -66,6 +169,8 @@ h2 {
   -webkit-text-stroke-color: #ff5c00;
   letter-spacing: .2rem;
   margin: 0;
+  font-size: 1.5em;
+  text-align: left;
 }
 
 p {
@@ -93,28 +198,6 @@ p {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 60px;
-}
-.desktop_visible {
-  display: block;
-}
-
-.mobile_visible {
-  display: none;
-}
-
-
-@media screen and (max-width: 414px) {
-body,html{
-    background-color: black;
-    font-size: 1.5em;
-}
-
-.desktop_visible {
-  display: none;
-}
-
-.mobile_visible {
-  display: block;
 }
 
 .flex-container {
