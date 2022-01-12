@@ -1,4 +1,12 @@
 
+@font-face {
+    font-family: 'mudclub';
+    src: url('MudClub-FranklintheGoth.otf') format('otf');
+    src: url('MudClub-FranklintheGoth.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,html{
     height: 100%;
     margin: 0;
@@ -10,11 +18,82 @@ body {
   padding: 1em;
   text-align: center;
   background-color: black;
-  font-size: 4em;
-  font-family: 'Supermercado One', cursive;
-  color: limegreen;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>⭐️</text></svg>")
+    16 0,
+  auto;
 }
 
+.nice-cursor:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📀</text></svg>")
+      16 0,
+    auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: bookmania;
+  font-size: 0.25em;
+  border: 0.1px solid;
+  border-radius: 40px;
+  padding: 10px 40px 5px 40px;
+}
+
+a:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📀</text></svg>")
+      16 0,
+    auto;
+    color: #ffbeff;
+}
+
+a:visited {
+  color: white;
+  text-transform: uppercase;
+  font-family: bookmania;
+}
+
+h2 {
+  font-family: mudclub, sans-serif;
+  color: black;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #ff5c00;
+  letter-spacing: .2rem;
+  margin: 0;
+}
+
+p {
+  font-family: bookmania, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.25em;
+  color: #9fffc8;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #ff5c00;
+  letter-spacing: .01rem;
+  line-height: 0.5em;
+}
+
+.center {
+  height: 900px;
+  position: relative;
+}
+
+.center h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
 .desktop_visible {
   display: block;
 }
@@ -24,15 +103,10 @@ body {
 }
 
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 414px) {
 body,html{
-    background-color: aqua;
-    color: coral;
-    font-size: 1em;
-}
-
-body {
-    border: 3em solid coral;
+    background-color: black;
+    font-size: 1.5em;
 }
 
 .desktop_visible {
@@ -41,6 +115,35 @@ body {
 
 .mobile_visible {
   display: block;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px 5px;
+  text-align: left;
+}
+
+#title {
+  width:195%;
+}
+
+#workshop-titles {
+vertical-align: top;
+}
+
+.about {
+  font-family: bookmania, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.5em;
+  color: #9fffc8;
+  line-height: normal;
+  padding: 60px 20px 20px 20px;
 }
 
 }
