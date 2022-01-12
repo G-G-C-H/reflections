@@ -62,7 +62,7 @@ a:visited {
 h2 {
   font-family: mudclub, sans-serif;
   color: black;
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: #ff5c00;
   letter-spacing: .2rem;
   margin: 0;
