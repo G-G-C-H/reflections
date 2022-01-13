@@ -67,7 +67,7 @@ h2 {
   -webkit-text-stroke-color: #ff5c00;
   letter-spacing: .2rem;
   margin: 0;
-  font-size: 7em;
+  font-size: 7vw;
   text-align: left;
 }
 
@@ -75,7 +75,7 @@ p {
   font-family: bookmania, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 2em;
+  font-size: 2vw;
   color: #9fffc8;
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: #ff5c00;
@@ -89,15 +89,6 @@ p {
   position: relative;
 }
 
-.center h2 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-}
 .desktop_visible {
   display: block;
 }
@@ -111,7 +102,7 @@ p {
 -moz-transform: rotate(90deg);
 -o-transform: rotate(90deg);
 transform: rotate(90deg);
-padding: 0px 0px 450px 0px;
+padding: 0px 0px 20% 0px;
 }
 
 .about {
@@ -121,7 +112,7 @@ padding: 0px 0px 450px 0px;
   font-size: 1.8em;
   color: #9fffc8;
   line-height: 1.7em;
-  padding: 50px 500px 50px 500px;
+  padding: 5% 30% 5% 30%;
 }
 
 @media screen and (max-width: 414px) {
